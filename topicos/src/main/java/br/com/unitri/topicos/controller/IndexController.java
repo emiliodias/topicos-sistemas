@@ -26,7 +26,14 @@ public class IndexController {
 		p1.setValor("R$ 50,00");
 		p1.setDescricao("Roupa muito boa.");
 		
+		Produto p2 = new Produto();
+		p2.setId(2l);
+		p2.setNome("Roupa 2");
+		p2.setValor("R$ 50,00");
+		p2.setDescricao("Roupa muito boa.");
+		
 		produtos.add(p1);
+		produtos.add(p2);
 		
 		ModelAndView modelView = new ModelAndView("index");
 		modelView.addObject("produtos", produtos);
